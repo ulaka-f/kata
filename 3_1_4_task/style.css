@@ -250,3 +250,56 @@ main {
     }
 
     }
+@media (min-width: 1120px) {
+    body {
+        background-color: #F8F8F8;
+    }
+    .logo_link {
+        visibility: hidden;
+    }
+    .all_menu {
+        visibility: hidden;
+    }
+    .divider_class {
+        visibility: hidden;
+    }
+    .navbar::after {
+        visibility: hidden;
+    }
+    .check_status_item {
+        position: relative;
+    }
+    .check_status_item::before {
+        content: "Статус ремонта";
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        width: 125px;
+        height: 24px;
+        top: -14px;
+        right: 45px;
+
+
+    }
+    .repair_item {
+        position: relative;
+        left: -10px;
+    }
+    .repair_item::before {
+        content:"Оставить заявку";
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        width: 130px;
+        height: 24px;
+        left: -135px;
+        top: -15px;
+    }
+    .container_sub {
+        position: relative;
+        top: -75px;
+    }
+    
+
+}
+
