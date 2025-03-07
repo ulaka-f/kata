@@ -253,6 +253,9 @@ main {
 @media (min-width: 1120px) {
     body {
         background-color: #F8F8F8;
+        width: 1120px;
+        height: 535px;
+        margin: 0;
     }
     .logo_link {
         visibility: hidden;
@@ -268,6 +271,7 @@ main {
     }
     .check_status_item {
         position: relative;
+        left: 370px;
     }
     .check_status_item::before {
         content: "Статус ремонта";
@@ -283,7 +287,7 @@ main {
     }
     .repair_item {
         position: relative;
-        left: -10px;
+        left: 300px;
     }
     .repair_item::before {
         content:"Оставить заявку";
@@ -299,7 +303,30 @@ main {
         position: relative;
         top: -75px;
     }
-    
+    .sub_menu {
+        line-height: 10px;
+        wrap-option: wrap;
+        width: 1096px;
+        height: 130px;
+        flex-wrap: wrap;
+    }
+    .sub_menu_item {
+        margin-right: 18px;
+    }
+    .text_container {
+        width: 490px;
+        height: 165px;
+    }
+    .main_image {
+        position: relative;
+        width: 532px;
+        height: 307px;
+        right: -155px;
+    }
+    .article {
+        position: relative;
+        top: -75px;
+    }
 
 }
 
