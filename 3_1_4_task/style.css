@@ -12,6 +12,13 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 html {
     box-sizing: border-box;
 }
@@ -21,6 +28,7 @@ html {
 body {
     margin: 0;
     font-family: 'TT Lakes', sans-serif;
+    font-weight: 300;
     width: 320px;
     height: 597px;
 }
@@ -72,6 +80,7 @@ button {
     height: 1px;
     background-color: #D9FFF5;
     position: absolute;
+    top: 63px;
 }
 .logo_link {
     position: relative;
@@ -135,22 +144,31 @@ main {
     }
     .container {
         margin: 0;
-        max-width: 784px;
+        max-width: 768px;
     }
     .header {
-        width: 100%;
+        width: 768px;
         height: 88px;
         margin: 0;
     }
     .divider_class {
         position: relative;
+        left: 210px;
+    }
+    .repair_item {
+        position: relative;
+        left: 134px;
+
+    }
+    .check_status_item {
+        position: relative;
+        left: 54px;
     }
     .divider_class::before {
         width: 40px;
         height: 40px;
         top: -4px;
-        left: -100px;
-        margin-left: 5px;
+        left: -110px;
         position: absolute;
         content: '';
         display: block;
@@ -160,7 +178,7 @@ main {
         width: 40px;
         height: 40px;
         top: -4px;
-        left: -50px;
+        left: -60px;
         margin-left: 5px;
         position: absolute;
         content: '';
@@ -170,12 +188,13 @@ main {
     .logo_link {
         margin-right: 60px;
         position: relative;
+        left: -100px;
     }
     .logo_link::after {
         width: 40px;
         height: 40px;
         top: -29px;
-        right: -50px;
+        right: -335px;
         margin-left: 5px;
         position: absolute;
         content: '';
@@ -184,6 +203,7 @@ main {
     }
     .all_menu {
         position: relative;
+        left: -42px;
     }
     .all_menu::after {
         content: '';
@@ -193,10 +213,10 @@ main {
         background-color: #EAEAEA;
         position: absolute;
         border-radius: 1px;
-        right: -30px;
-        top: 2px;
+        right: -20px;
+        top: 4px;
     }
-    .main {
+    main {
         width: 769px;
         height: 416px;
     }
@@ -208,6 +228,10 @@ main {
     .article_content {
         width: 312px;
         height: 208px;
+        position: relative;
+        top: -14px;
+        margin-left: 24px;
+        margin-right: 48px;
     }
 
     .text_container {
@@ -216,8 +240,13 @@ main {
         height: 153px;
         line-height: 20px;
     }
-    /*.read_more {
-        visibility: hidden;
-    }*/
+    .main_image {
+        width: 360px;
+        height: 208px;
+    }
+
+    .read_more {
+        margin-left: 5px;
+    }
 
     }
